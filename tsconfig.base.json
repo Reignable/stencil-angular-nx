@@ -15,15 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@stencil-angular-nx/angular-components": [
-        "libs/angular-components"
-      ],
-      "@stencil-angular-nx/angular-components/*": [
-        "libs/angular-components/*"
-      ],
-      "@stencil-angular-nx/components": ["libs/components"],
-      "@stencil-angular-nx/components/*": ["libs/components/*"],
-      "@stencil-angular-nx/loader": ["libs/components/loader"]
+      "@stencil-angular-nx/components": ["dist/libs/components/types/components"],
+      "@stencil-angular-nx/loader": ["dist/libs/loader"],
     }
   },
   "exclude": ["node_modules", "tmp"]
