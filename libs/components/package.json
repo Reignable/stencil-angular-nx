@@ -1,0 +1,29 @@
+{
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "description": "Stencil Component Starter",
+  "es2015": "dist/esm/index.js",
+  "es2017": "dist/esm/index.js",
+  "files": [
+    "dist/",
+    "loader/"
+  ],
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "name": "@stencil-angular-nx/components",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+  },
+  "scripts": {
+    "build": "stencil build",
+    "generate": "stencil generate",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll"
+  },
+  "types": "dist/types/index.d.ts",
+  "unpkg": "dist/components/components.esm.js",
+  "version": "0.0.1"
+}
