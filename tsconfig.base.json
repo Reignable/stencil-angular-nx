@@ -15,6 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@stencil-angular-nx/angular-components": [
+        "libs/angular-components/src/index.ts"
+      ],
       "@stencil-angular-nx/components": ["libs/components/src/index.ts"]
     }
   },
