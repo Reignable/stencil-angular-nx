@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, NgZo
 
 import { ProxyCmp } from './angular-component-lib/utils';
 
-import { Components } from '@stencil-angular-nx/components';
+import { Components } from '@stencil-angular-nx/stencil-components';
 
 
 @ProxyCmp({

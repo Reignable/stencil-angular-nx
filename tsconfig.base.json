@@ -15,8 +15,10 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@stencil-angular-nx/components": ["dist/libs/components/types/components"],
       "@stencil-angular-nx/loader": ["dist/libs/loader"],
+      "@stencil-angular-nx/stencil-components": [
+        "dist/libs/stencil-components/types/components"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

@@ -6,14 +6,14 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
-      dir: '../../dist/libs/components',
+      dir: '../../dist/libs/stencil-components',
       esmLoaderPath: '../loader',
     },
     {
       type: 'dist-custom-elements',
     },
     angularOutputTarget({
-      componentCorePackage: '@stencil-angular-nx/components',
+      componentCorePackage: '@stencil-angular-nx/stencil-components',
       outputType: 'component',
       directivesProxyFile:
         '../angular-components/src/lib/generated/components.ts',

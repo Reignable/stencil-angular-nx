@@ -11,7 +11,7 @@
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.js",
-  "name": "@stencil-angular-nx/components",
+  "name": "@stencil-angular-nx/stencil-components",
   "repository": {
     "type": "git",
     "url": "https://github.com/ionic-team/stencil-component-starter.git"

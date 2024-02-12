@@ -7,7 +7,7 @@
   "projectType": "library",
   "targets": {
     "build": {
-      "dependsOn": ["components:build"],
+      "dependsOn": ["stencil-components:build"],
       "executor": "@angular-devkit/build-angular:ng-packagr",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
       "options": {
