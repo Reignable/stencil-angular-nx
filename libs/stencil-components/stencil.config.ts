@@ -6,7 +6,7 @@ export const config: Config = {
   outputTargets: [
     {
       type: 'dist',
-      dir: '../../dist/libs/stencil-components',
+      dir: '../../dist/stencil-components',
       esmLoaderPath: '../loader',
     },
     {
