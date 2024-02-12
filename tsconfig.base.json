@@ -16,9 +16,14 @@
     "baseUrl": ".",
     "paths": {
       "@stencil-angular-nx/angular-components": [
-        "libs/angular-components/src/index.ts"
+        "libs/angular-components"
       ],
-      "@stencil-angular-nx/components": ["libs/components/src/index.ts"]
+      "@stencil-angular-nx/angular-components/*": [
+        "libs/angular-components/*"
+      ],
+      "@stencil-angular-nx/components": ["libs/components"],
+      "@stencil-angular-nx/components/*": ["libs/components/*"],
+      "@stencil-angular-nx/loader": ["libs/components/loader"]
     }
   },
   "exclude": ["node_modules", "tmp"]

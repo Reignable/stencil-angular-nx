@@ -1,7 +1,16 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { APP_INITIALIZER, NgModule } from '@angular/core';
+import { DIRECTIVES } from './generated';
+import { defineCustomElements } from '@stencil-angular-nx/loader';
 
 @NgModule({
-  imports: [CommonModule],
+  declarations: [...DIRECTIVES],
+  providers: [
+    {
+      provide: APP_INITIALIZER,
+      useFactory: () => defineCustomElements,
+      multi: true,
+    },
+  ],
+  exports: [...DIRECTIVES],
 })
 export class AngularComponentsModule {}
