@@ -19,6 +19,14 @@
         "command": "stencil test",
         "cwd": "libs/stencil-components"
       }
+    },
+    "e2e": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "stencil",
+        "args": ["test", "--e2e", "--projectType=library"],
+        "cwd": "libs/stencil-components"
+      }
     }
   }
 }

@@ -12,6 +12,7 @@ export const config: Config = {
     {
       type: 'dist-custom-elements',
     },
+    { type: 'www', serviceWorker: null, dir: '../../dist/stencil-components' },
     angularOutputTarget({
       componentCorePackage: '@stencil-angular-nx/stencil-components',
       outputType: 'component',

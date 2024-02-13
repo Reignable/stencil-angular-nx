@@ -1,5 +1,5 @@
 {
-  "collection": "dist/collection/collection-manifest.json",
+  "collection": "../../dist/stencil-components/collection/collection-manifest.json",
   "collection:main": "dist/collection/index.js",
   "description": "Stencil Component Starter",
   "es2015": "dist/esm/index.js",
@@ -9,7 +9,7 @@
     "loader/"
   ],
   "license": "MIT",
-  "main": "dist/index.cjs.js",
+  "main": "../../dist/stencil-components/index.cjs.js",
   "module": "dist/index.js",
   "name": "@stencil-angular-nx/stencil-components",
   "repository": {
