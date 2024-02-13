@@ -10,7 +10,7 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "stencil build",
-        "cwd": "libs/stencil-components"
+        "cwd": "{projectRoot}"
       }
     },
     "test": {
@@ -18,7 +18,7 @@
       "options": {
         "command": "stencil test",
         "args": ["--spec"],
-        "cwd": "libs/stencil-components"
+        "cwd": "{projectRoot}"
       }
     },
     "e2e": {
@@ -26,7 +26,7 @@
       "options": {
         "command": "stencil test",
         "args": ["--e2e"],
-        "cwd": "libs/stencil-components"
+        "cwd": "{projectRoot}"
       }
     },
     "serve": {
@@ -34,7 +34,7 @@
       "options": {
         "command": "stencil build",
         "args": ["--dev", "--watch", "--serve"],
-        "cwd": "libs/stencil-components"
+        "cwd": "{projectRoot}"
       }
     }
   }
