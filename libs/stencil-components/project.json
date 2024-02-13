@@ -2,6 +2,7 @@
   "name": "stencil-components",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
+  "root": "libs/stencil-components",
   "sourceRoot": "libs/stencil-components/src",
   "tags": [],
   "targets": {
@@ -15,16 +16,16 @@
     "test": {
       "executor": "nx:run-commands",
       "options": {
-        "args": ["--spec"],
         "command": "stencil test",
+        "args": ["--spec"],
         "cwd": "libs/stencil-components"
       }
     },
     "e2e": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "stencil",
-        "args": ["test", "--e2e", "--projectType=library"],
+        "command": "stencil test",
+        "args": ["--e2e"],
         "cwd": "libs/stencil-components"
       }
     },

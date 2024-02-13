@@ -5,8 +5,8 @@
   "es2015": "dist/esm/index.js",
   "es2017": "dist/esm/index.js",
   "files": [
-    "dist/",
-    "loader/"
+    "../../dist/stencil-components/",
+    "../../dist/loader/"
   ],
   "license": "MIT",
   "main": "../../dist/stencil-components/index.cjs.js",
