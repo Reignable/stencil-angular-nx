@@ -18,7 +18,8 @@
       "@stencil-angular-nx/loader": ["dist/loader"],
       "@stencil-angular-nx/stencil-components": [
         "dist/stencil-components/types/components"
-      ]
+      ],
+      "@stencil-angular-nx/angular-components": ["dist/angular-components"],
     }
   },
   "exclude": ["node_modules", "tmp"]

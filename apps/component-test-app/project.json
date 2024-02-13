@@ -1,0 +1,72 @@
+{
+  "name": "component-test-app",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "stencil-angular-nx",
+  "sourceRoot": "apps/component-test-app/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "dependsOn": ["angular-components:build"],
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/component-test-app",
+        "index": "apps/component-test-app/src/index.html",
+        "main": "apps/component-test-app/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/component-test-app/tsconfig.app.json",
+        "assets": [
+          "apps/component-test-app/src/favicon.ico",
+          "apps/component-test-app/src/assets"
+        ],
+        "styles": ["apps/component-test-app/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "component-test-app:build:production"
+        },
+        "development": {
+          "buildTarget": "component-test-app:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "component-test-app:build"
+      }
+    }
+  }
+}
