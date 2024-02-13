@@ -27,6 +27,14 @@
         "args": ["test", "--e2e", "--projectType=library"],
         "cwd": "libs/stencil-components"
       }
+    },
+    "serve": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "stencil build",
+        "args": ["--dev", "--watch", "--serve"],
+        "cwd": "libs/stencil-components"
+      }
     }
   }
 }
