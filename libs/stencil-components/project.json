@@ -11,6 +11,14 @@
         "command": "stencil build",
         "cwd": "libs/stencil-components"
       }
+    },
+    "test": {
+      "executor": "nx:run-commands",
+      "options": {
+        "args": ["--spec"],
+        "command": "stencil test",
+        "cwd": "libs/stencil-components"
+      }
     }
   }
 }
